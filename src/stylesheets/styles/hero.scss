@@ -1,0 +1,12 @@
+.hero {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+
+  &__image {
+    min-height: 50vh;
+    overflow: hidden;
+    background-size: cover;
+    width: 100vw;
+  }
+}
