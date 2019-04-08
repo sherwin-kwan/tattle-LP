@@ -1,15 +1,21 @@
-.valueProp {
-  height: 100vh;
+.valuePropSection {
 	background-color: orange;
 }
 
-.valuePropHeader {
+.valuePropSectionHeader {
 	font-size: 3em;
 }
 
 .mediaCard {
+	display: flex;
 	background-color: whitesmoke;
+	max-width: 60%;
+	height: 24em;
 	&__image {
-		width: 2em;
+		height: 14em;
 	}
+}
+
+.middleMediaCard {
+	background-color: white;
 }
