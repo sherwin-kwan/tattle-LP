@@ -1,15 +1,22 @@
 .valuePropSection {
-	background-color: orange;
+	background: orange;
 }
 
 .valuePropSectionHeader {
 	font-size: 3em;
 }
 
+.mediaArea {
+	background-color: whitesmoke;
+}
+
+.middleMediaArea {
+	background-color: white;
+}
+
 .mediaCard {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: whitesmoke;
 	max-width: 60%;
 	height: 24em;
 	&__image {
@@ -19,8 +26,7 @@
 		color: whitesmoke;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
-}
-
-.middleMediaCard {
-	background-color: white;
+	&__explanation {
+		max-width: 100%;
+	}
 }

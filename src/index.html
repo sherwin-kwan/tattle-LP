@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="./styles/index.css">
-	<link rel="stylesheet" href="./styles/normalize.css">
+	<!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
 	<title>Tattle</title>
 </head>
@@ -17,27 +17,53 @@
 	</div>
 	<div class="valuePropSection">
 		<h2 class="valuePropSectionHeader">why become a host with tattle?</h2>
-		<div class="mediaCard">
-			<img src="./images/valuePropImage1.png" alt="" class="mediaCard__image">
-			<h2 class="mediaCard__number">1.</h2>
-			<h3 class="mediaCard__header">Lorem ipsum dolor sit amet</h3>
-			<h5 class="mediaCard__explanation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-			aliqua. Ut enim ad minim veniam,</h5>
+		<div class="mediaArea">
+			<div class="mediaCard">
+				<img src="./images/valuePropImage1.png" alt="" class="mediaCard__image">
+				<h2 class="mediaCard__number">1.</h2>
+				<h3 class="mediaCard__header">Lorem ipsum dolor sit amet</h3>
+				<p class="mediaCard__explanation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+				aliqua. Ut enim ad minim veniam,</p>
+			</div>
 		</div>
-		<div class="mediaCard middleMediaCard">
-			<img src="./images/valuePropImage2.png" alt="" class="mediaCard__image">
-			<h2 class="mediaCard__number">2.</h2>
-			<h3 class="mediaCard__header">Lorem ipsum dolor sit amet</h3>
-			<h5 class="mediaCard__explanation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-			aliqua. Ut enim ad minim veniam,</h5>
+		<div class="mediaArea middleMediaArea">
+			<div class="mediaCard">
+				<img src="./images/valuePropImage2.png" alt="" class="mediaCard__image">
+				<h2 class="mediaCard__number">2.</h2>
+				<h3 class="mediaCard__header">Lorem ipsum dolor sit amet</h3>
+				<p class="mediaCard__explanation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+				aliqua. Ut enim ad minim veniam,</p>
+			</div>
 		</div>
-		<div class="mediaCard">
-			<img src="./images/valuePropImage3.png" alt="" class="mediaCard__image">
-			<h2 class="mediaCard__number">3.</h2>
-			<h3 class="mediaCard__header">Lorem ipsum dolor sit amet</h3>
-			<h5 class="mediaCard__explanation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-			aliqua. Ut enim ad minim veniam,</h5>
+		<div class="mediaArea">
+			<div class="mediaCard">
+				<img src="./images/valuePropImage3.png" alt="" class="mediaCard__image">
+				<h2 class="mediaCard__number">3.</h2>
+				<h3 class="mediaCard__header">Lorem ipsum dolor sit amet</h3>
+				<p class="mediaCard__explanation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+				aliqua. Ut enim ad minim veniam,</p>
+			</div>
 		</div>
+	</div>
+	<div class="signupForm">
+		<form action="#" method="post">
+			<h3 class="signupForm__header">become a host with tattle</h3>
+			<div class="signupForm__field">
+				<input class="signupForm__input" type="text" id="name" name="userName">
+				<label class="signupForm__label" for="name">Name:</label>
+			</div>
+			<div class="signupForm__field">
+				<input class="signupForm__input" type="email" id="mail" name="userEmail">
+				<label class="signupForm__label" for="mail">E-mail:</label>
+			</div>
+			<div class="signupForm__field">
+				<input class="signupForm__input" type="text" id="city" name="userCity">
+				<label class="signupForm__label" for="msg">City:</label>
+			</div>
+			<div class="button">
+				<button type="submit">Continue</button>
+			</div>
+		</form>
 	</div>
 </body>
 </html>
