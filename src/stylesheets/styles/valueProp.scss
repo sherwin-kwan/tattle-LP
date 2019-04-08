@@ -1,4 +1,15 @@
 .valueProp {
   height: 100vh;
-  background-color: orange;
+	background-color: orange;
+}
+
+.valuePropHeader {
+	font-size: 3em;
+}
+
+.mediaCard {
+	background-color: whitesmoke;
+	&__image {
+		width: 2em;
+	}
 }

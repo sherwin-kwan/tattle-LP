@@ -7,7 +7,6 @@ const fs = require('fs');
 const WebpackBar = require('webpackbar');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
 const WebappWebpackPlugin = require('webapp-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -46,9 +45,6 @@ const robots = new RobotstxtPlugin({
 const clean = new CleanWebpackPlugin(['dist'], {
   root: config.root,
 });
-
-// Stylelint
-const stylelint = new StyleLintPlugin();
 
 // Extract CSS
 const cssExtract = new MiniCssExtractPlugin({
@@ -131,7 +127,6 @@ const google = new GoogleAnalyticsPlugin({
 
 module.exports = [
   clean,
-  stylelint,
   cssExtract,
   ...generateHTMLPlugins(),
   fs.existsSync(config.favicon) && favicons,
