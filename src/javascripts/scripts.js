@@ -1,1 +1,3 @@
-// Add your scripts here
+$(document).ready(function () {
+	console.log("ready!");
+});
