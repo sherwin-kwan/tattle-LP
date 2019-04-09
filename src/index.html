@@ -1,25 +1,40 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
-	<link rel="stylesheet" href="./styles/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
-	<script src="javascripts/scripts.js"></script>
-	<title>Tattle</title>
-</head>
-<body>
-	<div class="c-hero">
-		<div class="_flipReset">
-			<div class="l-heroContainer">
-				<h1 class="c-hero__hook">share your passion with the world below</h1>
-				<button class="c-hero__learnMore">learn more</button>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
+		<link rel="stylesheet" href="./styles/index.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+		<title>Tattle</title>
+	</head>
+	<body>
+		<div class="c-hero">
+			<div class="_flipReset">
+				<div class="l-heroContainer">
+					<h1 class="c-hero__hook">share your passion with the world below</h1>
+					<button class="c-hero__learnMore">learn more</button>
+				</div>
 			</div>
 		</div>
+	<div class="c-signUpForm">
+		<form class="">
+			<h4 class="c-signUpForm__header">become a host with tattle</h4>
+			<hr>
+			<br>
+			<div class="formContent" id="js-formContent">
+				<!-- <label class="signUpForm__label" for="email">Email</label> -->
+				<input class="c-signUpForm__input" id="email" type="email" placeholder="Email">
+
+				<!-- <label class="signUpForm__label" for="password">Password</label> -->
+				<input class="c-signUpForm__input" id="password" type="password" placeholder="Password">
+
+				<button type="submit" class="signUpForm__button">Continue</button>
+			</div>
+		</form>
 	</div>
 	<div class="valuePropSection">
 		<h2 class="valuePropSection__Header">why host with tattle?</h2>
@@ -51,22 +66,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="c-signUpForm">
-		<form class="">
-			<h4 class="c-signUpForm__header">become a host with tattle</h4>
-			<hr>
-			<br>
-			<div class="formContent">
-				<!-- <label class="signUpForm__label" for="email">Email</label> -->
-				<input class="c-signUpForm__input" id="email" type="email" placeholder="Email">
-
-				<!-- <label class="signUpForm__label" for="password">Password</label> -->
-				<input class="c-signUpForm__input" id="password" type="password" placeholder="Password">
-
-				<button type="submit" class="signUpForm__button">Continue</button>
-			</div>
-		</form>
-	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="javascripts/scripts.js"></script>
 </body>
 </html>

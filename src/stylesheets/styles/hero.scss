@@ -35,4 +35,5 @@
 // Hacky solution. Ultimately, source image should be flipped, and we should not have to accomplish this with css
 ._flipReset {
   transform: scaleX(-1); //flip image
+  height: 100%;
 }

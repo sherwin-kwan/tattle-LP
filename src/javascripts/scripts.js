@@ -1,3 +1,7 @@
 $(document).ready(function () {
-	console.log("ready!");
+  console.log("jquery loaded!!!");;
+
+  $("#js-formContent").click(() => {
+    console.log('clicked!');
+  })
 });

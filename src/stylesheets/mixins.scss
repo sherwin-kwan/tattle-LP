@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+@mixin buttonMixin {
+	background-color: $primary-color;
+	color: $button-text-color;
+	font-weight: 700;
+	border-radius: .5em;
+	border: 2px solid #00809d;
+	text-transform: uppercase;
+}
+
+@mixin charcoalText {
+	color: $charcoal;
+	text-transform: uppercase;
+}
