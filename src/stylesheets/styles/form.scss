@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .c-signUpForm {
 	position: sticky;
 	right: 0;
@@ -41,6 +43,7 @@
 		width: 40%;
 		height: 2em;
 		margin: 1em auto;
+		background-color: #fff;
 	}
 }
 
