@@ -1,25 +1,26 @@
 .valuePropSection {
+	&__Header {
+		font-size: 3rem;
+	}
 }
 
-.valuePropSectionHeader {
-	font-size: 3em;
-}
 
 .mediaArea {
 	background-color: whitesmoke;
+	height: 34em;
 }
 
 .middleMediaArea {
 	background-color: white;
 }
 
-.mediaCard {
+.c-mediaCard {
 	display: flex;
-	flex-wrap: wrap;
-	max-width: 60%;
-	height: 24em;
+	flex-flow: column wrap;
+	max-width: 50%;
+	height: auto;
 	&__image {
-		height: 14em;
+		width: 100%;
 	}
 	&__number {
 		color: whitesmoke;

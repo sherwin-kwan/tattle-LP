@@ -1,20 +1,23 @@
-.signUpForm {
+.c-signUpForm {
 	position: sticky;
 	right: 0;
 	left: 0;
-	bottom: 40px;
-	max-width: 50%;
+	bottom: 8em;
+	max-width: 75%;
+	max-height: 20em;
 	margin: 0 auto;
 	background-color: whitesmoke;
 	border: .2px solid dimgrey;
-	border-radius: .6em;
+	border-radius: .4em;
 	box-shadow: 10px 10px 21px -6px rgba(0,0,0,0.75);
 
 	&__header {
 		text-align: center;
 		font-weight: 700;
-		font-size: 2em;
+		font-size: 1.1rem;
 		text-transform: uppercase;
+		margin-left: .4em;
+		margin-right: .4em;
 	}
 }
 
@@ -27,13 +30,16 @@
 	}
 
 	& input {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid black;
 		width: 80%;
 		margin: 1em auto;
 	}
 
 	& button {
-		width: 30%;
-		height: 3em;
+		width: 40%;
+		height: 2em;
 		margin: 1em auto;
 	}
 }

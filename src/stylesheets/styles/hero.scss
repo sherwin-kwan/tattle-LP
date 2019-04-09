@@ -1,16 +1,38 @@
-.hero {
+.c-hero {
   height: 500px;
   width: 100%;
   background-image: url('https://c.pxhere.com/images/29/14/e145bbfcad48036ceda7f3be84c9-1576819.jpg!d');
   background-repeat: no-repeat;
-  // background-position: center;
+  background-position: 30% 50%;
   background-size: cover;
   transform: scaleX(-1); //flip image
+  border-bottom-left-radius: 3em; //will be changed to 'right' when transform hack is fixed
 
-  &__image {
-    min-height: 50vh;
-    overflow: hidden;
-    background-size: cover;
-    width: 100vw;
+  &__hook {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 1.7rem;
   }
+
+  &__learnMore {
+    max-width: 30%;
+    background-color: #6EC1E4;
+    border: 2px solid #00809d;
+    color: whitesmoke;
+    text-transform: uppercase;
+    border-radius: 2px;
+  }
+
+}
+
+.l-heroContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+
+// Hacky solution. Ultimately, source image should be flipped, and we should not have to accomplish this with css
+._flipReset {
+  transform: scaleX(-1); //flip image
 }
