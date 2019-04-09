@@ -35,7 +35,7 @@
 	& input {
 		background-color: transparent;
 		border: none;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid #d2dfde;
 		width: 80%;
 		margin: 1em auto;
 		&:focus {
@@ -60,7 +60,16 @@ hr {
 }
 
 input.c-signUpForm__input {
-	&::placeholder { /* Chrome/Opera/Safari */
-		color: orange;
+	position: relative;
+
+	&::placeholder {
+		color: dimgrey;
+		position: absolute;
+	}
+	&:focus {
+		&::placeholder {
+			color: $charcoal;
+			bottom: 50px;
+		}
 	}
 }
