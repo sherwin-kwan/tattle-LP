@@ -1,12 +1,11 @@
 .hero {
-  // height: 100%;
   height: 500px;
-  // width: 500px;
   width: 100%;
   background-image: url('https://c.pxhere.com/images/29/14/e145bbfcad48036ceda7f3be84c9-1576819.jpg!d');
   background-repeat: no-repeat;
-  background-position: center;
-  transform: scaleX(-1);
+  // background-position: center;
+  background-size: cover;
+  transform: scaleX(-1); //flip image
 
   &__image {
     min-height: 50vh;
