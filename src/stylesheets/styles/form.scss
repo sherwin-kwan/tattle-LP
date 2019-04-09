@@ -15,10 +15,10 @@
 	box-shadow: 10px 10px 21px -6px rgba(0,0,0,0.75);
 
 	&__header {
+		@include charcoalText;
 		text-align: center;
 		font-weight: 700;
 		font-size: 1.1rem;
-		text-transform: uppercase;
 		margin-left: .4em;
 		margin-right: .4em;
 	}
@@ -38,6 +38,9 @@
 		border-bottom: 1px solid black;
 		width: 80%;
 		margin: 1em auto;
+		&:focus {
+			outline: none;
+		}
 	}
 
 	& button {
@@ -49,9 +52,15 @@
 }
 
 hr {
-    border: none;
-    height: 1px;
-    color: #333; /* old IE */
-		background-color: #333; /* Modern Browsers */
-		width: 90%;
+	border: none;
+	height: 1px;
+	color: $charcoal; /* old IE */
+	background-color: $charcoal; /* Modern Browsers */
+	width: 90%;
+}
+
+input.c-signUpForm__input {
+	&::placeholder { /* Chrome/Opera/Safari */
+		color: orange;
+	}
 }

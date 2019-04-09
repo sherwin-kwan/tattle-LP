@@ -3,14 +3,17 @@
 
 .valuePropSection {
 	&__Header {
+		@include charcoalText;
 		font-size: 3rem;
 	}
 }
 
-
 .mediaArea {
-	background-color: whitesmoke;
 	height: 34em;
+}
+
+.edgeMediaArea {
+	background-color: whitesmoke;
 }
 
 .middleMediaArea {
@@ -18,6 +21,7 @@
 }
 
 .c-mediaCard {
+	margin-left: 1em;
 	display: flex;
 	flex-flow: column wrap;
 	max-width: 50%;
