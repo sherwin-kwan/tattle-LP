@@ -20,14 +20,15 @@
 	background-color: white;
 }
 
+// TODO: put the whole mediaCard into a flexbox with flex direction row, then put the text portion of the mediaCard into its own flexbox with direction column.
 .c-mediaCard {
 	margin-left: 1em;
 	display: flex;
-	flex-flow: column wrap;
-	max-width: 50%;
+	flex-flow: row wrap;
+	// max-width: 50%;
 	height: auto;
 	&__image {
-		width: 100%;
+		// width: 30%;
 	}
 	&__number {
 		color: whitesmoke;
@@ -36,4 +37,15 @@
 	&__explanation {
 		max-width: 100%;
 	}
+}
+
+.l-media__text {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.imageWrapper {
+	height: 80%;
+	// width: 200px;
+	// overflow: hidden;
 }
