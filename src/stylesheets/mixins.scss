@@ -13,3 +13,21 @@
 	color: $charcoal;
 	text-transform: uppercase;
 }
+
+@mixin marginHorizontal($size) {
+	margin-left: $size;
+	margin-right: $size;
+}
+
+@mixin marginVertical($size) {
+	margin-top: $size;
+	margin-bottom: $size;
+}
+@mixin paddingHorizontal($size) {
+	padding-left: $size;
+	padding-right: $size;
+}
+@mixin marginHorizontal($size) {
+	padding-top: $size;
+	padding-bottom: $size;
+}
