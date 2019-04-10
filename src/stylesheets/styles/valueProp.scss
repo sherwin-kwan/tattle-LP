@@ -10,21 +10,36 @@
 	}
 }
 
-// TODO: put the whole mediaCard into a flexbox with flex direction row, then put the text portion of the mediaCard into its own flexbox with direction column.
 .c-mediaCard {
-	@include marginHorizontal(2em);
+	@include marginHorizontal(1em);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	height: auto;
-	&__image {
+	&__image { //to change size of image, we must change wrapper
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto auto;
+		width: 100%;
+		height: auto;
 	}
 	&__number {
 		color: whitesmoke;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		width: max-content;
+		font-size: 2em;
+	}
+	&__header {
+		width: max-content;
+		align-self: center;
+		@include marginHorizontal(1em);
 	}
 	&__explanation {
 		max-width: 100%;
+		flex: 1;
 	}
 }
 .middleMediaCard {
@@ -47,8 +62,16 @@
 	flex-flow: column wrap;
 	@include marginHorizontal(1em);
 	margin-top: 1em;
+
+	&__numberAndHeader {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 
 .imageWrapper {
-	@include marginVertical(2em)
+	@include marginVertical(2em);
+	width: 30%;
+	position: relative;
 }
