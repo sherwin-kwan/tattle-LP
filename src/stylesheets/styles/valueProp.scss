@@ -2,9 +2,11 @@
 @import '../mixins.scss';
 
 .valuePropSection {
-	&__Header {
+	&__header {
 		@include charcoalText;
-		font-size: 3rem;
+		@include marginHorizontal(.5em);
+		font-size: 2.4rem;
+		width: 80%;
 	}
 }
 
@@ -14,10 +16,8 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	// max-width: 50%;
 	height: auto;
 	&__image {
-		// width: 30%;
 	}
 	&__number {
 		color: whitesmoke;
@@ -50,6 +50,5 @@
 }
 
 .imageWrapper {
-	height: 80%;
 	@include marginVertical(2em)
 }
