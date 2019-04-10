@@ -35,7 +35,7 @@
 	&__header {
 		width: max-content;
 		align-self: center;
-		@include marginHorizontal(1em);
+		margin-left: 1em;
 	}
 	&__explanation {
 		max-width: 100%;
@@ -61,17 +61,22 @@
 	flex: 1;
 	flex-flow: column wrap;
 	@include marginHorizontal(1em);
+	@include marginVertical(2em);
 	margin-top: 1em;
+	font-size: .8em;
 
 	&__numberAndHeader {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		width: fit-content;
+		// font-size: 0.9em;
 	}
 }
 
 .imageWrapper {
 	@include marginVertical(2em);
 	width: 30%;
+	// width: calc(15% + 4em);
 	position: relative;
 }
