@@ -27,6 +27,7 @@
 		width: max-content;
 		font-size: 1.7rem;
 		margin: 0 0.5em 0 0;
+		@include paddingVertical(10px);
 	}
 	&__header {
 		align-self: center;
