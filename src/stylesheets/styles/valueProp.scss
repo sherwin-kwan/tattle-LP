@@ -2,14 +2,35 @@
 @import '../mixins.scss';
 
 .valuePropSection {
-	&__Header {
+	&__header {
 		@include charcoalText;
-		font-size: 3rem;
+		@include marginHorizontal(.5em);
+		font-size: 2.4rem;
+		width: 80%;
 	}
 }
 
+// TODO: put the whole mediaCard into a flexbox with flex direction row, then put the text portion of the mediaCard into its own flexbox with direction column.
+.c-mediaCard {
+	@include marginHorizontal(2em);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: auto;
+	&__image {
+	}
+	&__number {
+		color: whitesmoke;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+	&__explanation {
+		max-width: 100%;
+	}
+}
+.middleMediaCard {
+	flex-direction: row-reverse;
+}
 .mediaArea {
-	height: 34em;
 }
 
 .edgeMediaArea {
@@ -20,20 +41,14 @@
 	background-color: white;
 }
 
-.c-mediaCard {
-	margin-left: 1em;
+.l-media__text {
 	display: flex;
+	flex: 1;
 	flex-flow: column wrap;
-	max-width: 50%;
-	height: auto;
-	&__image {
-		width: 100%;
-	}
-	&__number {
-		color: whitesmoke;
-		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	}
-	&__explanation {
-		max-width: 100%;
-	}
+	@include marginHorizontal(1em);
+	margin-top: 1em;
+}
+
+.imageWrapper {
+	@include marginVertical(2em)
 }
