@@ -18,11 +18,12 @@
     max-width: 80%;
     margin: initial;
     @include marginVertical(2em);
+    text-shadow: black 1px 0 10px;
   }
 
   &__learnMore {
     @include buttonMixin;
-    max-width: 40%;
+    max-width: 47%;
     height: 40px;
   }
 }
