@@ -9,7 +9,7 @@
   background-position: 30% 50%;
   background-size: cover;
   transform: scaleX(-1); //flip image
-  border-bottom-left-radius: 3em; //will be changed to 'right' when transform hack is fixed
+  border-bottom-left-radius: 4em; //will be changed to 'right' when transform hack is fixed
 
   &__hook {
     color: $button-text-color;
@@ -38,4 +38,9 @@
 ._flipReset {
   transform: scaleX(-1); //flip image
   height: 100%;
+}
+
+.heroBackground {
+  height: 556px;
+  background-image: linear-gradient(to right, #00ffc6, #1b67da);
 }

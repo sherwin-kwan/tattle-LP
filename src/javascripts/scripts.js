@@ -6,6 +6,13 @@ $(document).ready(function () {
     $("#js-formContent").slideToggle();
 	})
 
+	$("#c-hero__learnMore").click(function () {
+		$('html,body').animate({
+			scrollTop: $(".valuePropSection__header").offset().top
+		},
+			'slow');
+	});
+
 	// var element_position = $('#js-signUpForm').offset().top;
 	// $(window).on('scroll', function () {
 	// 	var y_scroll_pos = window.pageYOffset;
@@ -17,25 +24,27 @@ $(document).ready(function () {
 	// 	}
 	// });
 
-	$.fn.isInViewport = function () {
-		var elementTop = $(this).offset().top;
-		var elementBottom = elementTop + $(this).outerHeight();
+	// $.fn.isInViewport = function () {
+	// 	var elementTop = $(this).offset().top;
+	// 	var elementBottom = elementTop + $(this).outerHeight();
 
-		var viewportTop = $(window).scrollTop();
-		var viewportBottom = viewportTop + $(window).height();
+	// 	var viewportTop = $(window).scrollTop();
+	// 	var viewportBottom = viewportTop + $(window).height();
 
-		return elementBottom > viewportTop && elementTop < viewportBottom;
-	};
+	// 	return elementBottom > viewportTop && elementTop < viewportBottom;
+	// };
 
-	$(function () {
-		// var eTop = $('signUpForm').offset().top; //get the offset top of the element
-		// log(eTop - $(window).scrollTop()); //position of the ele w.r.t window
+	// $(function () {
+	// 	// var eTop = $('signUpForm').offset().top; //get the offset top of the element
+	// 	// log(eTop - $(window).scrollTop()); //position of the ele w.r.t window
 
-		$(window).scroll(function () { //when window is scrolled
-			// log(eTop - $(window).scrollTop());
-			// eTop <= $(window).scrollTop() && shrink();
-			console.log($(this).isInViewport())
-		});
-	});
+	// 	$(window).scroll(function () { //when window is scrolled
+	// 		// log(eTop - $(window).scrollTop());
+	// 		// eTop <= $(window).scrollTop() && shrink();
+	// 		console.log($(this).isInViewport())
+	// 	});
+	// });
+
+
 
 });

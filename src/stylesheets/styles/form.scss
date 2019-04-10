@@ -46,7 +46,7 @@
 	& button {
 		@include buttonMixin;
 		width: 40%;
-		height: 2em;
+		// height: 2em;
 		margin: 1em auto;
 	}
 }
