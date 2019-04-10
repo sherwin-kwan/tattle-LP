@@ -14,6 +14,7 @@
 	text-transform: uppercase;
 }
 
+// MARGIN/PADDING MIXINS
 @mixin marginHorizontal($size) {
 	margin-left: $size;
 	margin-right: $size;
@@ -27,7 +28,7 @@
 	padding-left: $size;
 	padding-right: $size;
 }
-@mixin marginHorizontal($size) {
+@mixin paddingVertical($size) {
 	padding-top: $size;
 	padding-bottom: $size;
 }
