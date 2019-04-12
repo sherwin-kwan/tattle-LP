@@ -1,23 +1,55 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
+.heroBackground {
+  height: 556px;
+  background-image: linear-gradient(to right, #00ffc6, #1b67da);
+  @media screen and (min-width: $break-md) {
+    height: 660px;
+  }
+  @media screen and (min-width: $break-lg) {
+    height: 757px;
+  }
+  @media screen and (min-width: $break-xlg) {
+    height: 854px;
+  }
+  @media screen and (min-width: $break-xxlg) {
+    height: 931px;
+  }
+  @media screen and (min-width: $break-xxxlg) {
+    height: 1020px;
+  }
+}
+
 .c-hero {
   height: 500px;
   width: 100%;
-  // background-image: url('https://c.pxhere.com/images/29/14/e145bbfcad48036ceda7f3be84c9-1576819.jpg!d');
   background-image: url('/images/hero.png');
   background-repeat: no-repeat;
-  background-position: 30% 50%;
+  background-position: 60% 50%;
   background-size: cover;
-  border-bottom-left-radius: 4em; //will be changed to 'right' when transform hack is fixed
+  border-bottom-right-radius: 4em;
   @media screen and (min-width: $break-md) {
-
+    background-position: 30% 100%;
+    height: 590px;
+  }
+  @media screen and (min-width: $break-lg) {
+    height: 689px;
+  }
+  @media screen and (min-width: $break-xlg) {
+    height: 777px;
+  }
+  @media screen and (min-width: $break-xxlg) {
+    height: 855px;
+  }
+  @media screen and (min-width: $break-xxxlg) {
+    height: 950px;
   }
 
   &__hook {
     color: $button-text-color;
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: calc(1em + 2vw);
     max-width: 80%;
     margin: initial;
     @include marginVertical(2em);
@@ -35,10 +67,4 @@
   display: flex;
   flex-direction: column;
   margin-left: 2em;
-}
-
-
-.heroBackground {
-  height: 556px;
-  background-image: linear-gradient(to right, #00ffc6, #1b67da);
 }
