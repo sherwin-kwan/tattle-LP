@@ -4,12 +4,15 @@
 .c-hero {
   height: 500px;
   width: 100%;
-  background-image: url('https://c.pxhere.com/images/29/14/e145bbfcad48036ceda7f3be84c9-1576819.jpg!d');
+  // background-image: url('https://c.pxhere.com/images/29/14/e145bbfcad48036ceda7f3be84c9-1576819.jpg!d');
+  background-image: url('/images/hero.png');
   background-repeat: no-repeat;
   background-position: 30% 50%;
   background-size: cover;
-  transform: scaleX(-1); //flip image
   border-bottom-left-radius: 4em; //will be changed to 'right' when transform hack is fixed
+  @media screen and (min-width: $break-md) {
+
+  }
 
   &__hook {
     color: $button-text-color;
@@ -34,12 +37,6 @@
   margin-left: 2em;
 }
 
-
-// Hacky solution. Ultimately, source image should be flipped, and we should not have to accomplish this with css
-._flipReset {
-  transform: scaleX(-1); //flip image
-  height: 100%;
-}
 
 .heroBackground {
   height: 556px;
