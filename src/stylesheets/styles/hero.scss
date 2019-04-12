@@ -26,7 +26,7 @@
   width: 100%;
   background-image: url('/images/hero.png');
   background-repeat: no-repeat;
-  background-position: 60% 50%;
+  background-position: 68% 50%;
   background-size: cover;
   border-bottom-right-radius: 4em;
   @media screen and (min-width: $break-md) {
@@ -50,16 +50,19 @@
     color: $button-text-color;
     text-transform: uppercase;
     font-size: calc(1em + 2vw);
-    max-width: 80%;
+    max-width: 58%;
     margin: initial;
-    @include marginVertical(2em);
+    margin-top: .5em;
     text-shadow: black 1px 0 10px;
   }
 
   &__learnMore {
     @include buttonMixin;
+    margin-top: 2em;
     max-width: 47%;
     height: 40px;
+    text-decoration: none;
+
   }
 }
 
@@ -67,4 +70,8 @@
   display: flex;
   flex-direction: column;
   margin-left: 2em;
+
+  * + * {
+    margin-top: 1em;
+  }
 }
