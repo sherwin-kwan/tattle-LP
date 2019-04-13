@@ -1,6 +1,8 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
+$mediaTextMargin: 34px;
+
 .valuePropSection {
 	&__header {
 		@include charcoalText;
@@ -18,28 +20,23 @@
 	height: auto;
 	&__image { //to change size of image, we must change wrapper
 		width: 100%;
-		// @include marginVertical(1.5em);
-
 	}
 	&__number {
 		color: whitesmoke;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 		width: max-content;
 		font-size: calc(2.1em + 1.8vw);
-		margin: 0 0 15px 34px;
-		// @include paddingVertical(10px);
+		margin: 0 0 15px $mediaTextMargin;
 	}
 	&__header {
 		align-self: center;
 		font-size: calc(1em + 1.1vw);
 		margin-top: 0;
-		margin-left: 34px;
-		// max-width: 480px;
+		margin-left: $mediaTextMargin;
 	}
 	&__explanation {
 		flex: 1;
-		// max-width: 550px;
-		margin-left: 34px;
+		margin-left: $mediaTextMargin;
 		line-height: 1.4;
 		font-size: calc(0.8em + .5vw)
 	}
@@ -58,6 +55,7 @@
 	background-color: white;
 }
 
+//TODO: add margins between text/images and their respective edges of the screen when viewport is large.
 .l-media__text {
 	display: flex;
 	flex-direction: column;
@@ -81,8 +79,6 @@
 			margin-left: initial;
 		}
 	}
-	@media screen and (max-width: 820px) {
-	}
 }
 
 .imageWrapper {
@@ -91,7 +87,6 @@
 	justify-content: flex-start;
 	align-self: flex-start;
 	@include marginVertical(2em);
-	// min-width: 250px;
 	max-width: 320px;
 	width: calc(4em + 40vw);
 }
