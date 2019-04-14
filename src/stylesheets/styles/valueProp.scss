@@ -23,7 +23,7 @@ $mediaTextMargin: 34px;
 	}
 	&__number {
 		color: whitesmoke;
-		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		text-shadow: -1px 0 $charcoal, 0 1px $charcoal, 1px 0 $charcoal, 0 -1px $charcoal;
 		width: max-content;
 		font-size: calc(2.1em + 1.8vw);
 		margin: 0 0 15px $mediaTextMargin;
