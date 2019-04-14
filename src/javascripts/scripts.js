@@ -16,10 +16,9 @@ $(document).ready(function () {
 	});
 
 	var typed = new Typed('#js-typed', {
-		strings: ["you've got your passion.^1000\n you've got your city.^300\n^300\n^300\n now share it with the world."],
+		strings: ["you've got your passion.^1000\n you've got your city.^300\n^300\n^300\n now, ^400 share it with the world^500."],
 		typeSpeed: 30,
 		backSpeed: 40,
-		// loop: true
 	});
 
 });
