@@ -50,7 +50,7 @@
     color: $button-text-color;
     text-transform: uppercase;
     font-size: calc(1em + 2vw);
-    max-width: 58%;
+    // max-width: 58%;
     margin: initial;
     margin-top: .5em;
     text-shadow: black 1px 0 10px;
@@ -65,6 +65,7 @@
     max-width: 47%;
     height: 40px;
     text-decoration: none;
+    justify-self: flex-end;
 
     &Container {
       width: fit-content;
@@ -79,4 +80,8 @@
   flex-direction: column;
   margin-left: 2em;
   height: 80%;
+}
+
+#type {
+  white-space: pre-line;
 }
