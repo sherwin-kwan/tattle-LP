@@ -15,9 +15,9 @@ $(document).ready(function () {
 			'slow');
 	});
 
-	var typed = new Typed('#type', {
-		strings: ["you've got your passion^1000\n you've got your city^500\n^500\n^500\n now share it with the world"],
-		typeSpeed: 40,
+	var typed = new Typed('#js-typed', {
+		strings: ["you've got your passion.^1000\n you've got your city.^300\n^300\n^300\n now share it with the world."],
+		typeSpeed: 30,
 		backSpeed: 40,
 		// loop: true
 	});

@@ -82,6 +82,36 @@
   height: 80%;
 }
 
-#type {
+#js-typed {
+  display: inline-block;
   white-space: pre-line;
+  width: auto;
+}
+
+#js-typed:after {
+  visibility: visible;
+  content: '';
+  background-color: whitesmoke;
+  display: inline-block;
+  position: relative;
+  width: 0.15em;
+  height: 1.1em;
+  top: 5px;
+  margin-left: 0;
+  box-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+  animation: flicker 2s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.typed-cursor {
+  visibility: hidden;
+  color: white;
 }
