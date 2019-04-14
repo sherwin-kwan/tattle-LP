@@ -1,6 +1,8 @@
 import Typed from 'typed.js';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 $(document).ready(function () {
-	console.log(Typed)
 	console.log("jquery loaded!!!");
 
   $("#js-signUpForm").click(() => {
@@ -20,5 +22,8 @@ $(document).ready(function () {
 		typeSpeed: 30,
 		backSpeed: 40,
 	});
+
+	AOS.init();
+	console.log(AOS)
 
 });
