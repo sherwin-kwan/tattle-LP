@@ -34,8 +34,8 @@ $(document).ready(function () {
 		states: {
 			"default-state": {
 				gradients: [
-					['#834D9B', '#D04ED6'],
-					['#1CD8D2', '#93EDC7']
+					['#00FFC6', '#1B67DA'],
+					['#002D77', '#4E72C6']
 				]
 			}
 		}
