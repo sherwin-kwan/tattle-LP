@@ -61,6 +61,7 @@
     }
   }
   //TODO: Adjust size of learn more button
+  //TODO: pressing button should not scroll down user so abruptly
   &__learnMore {
     @include buttonMixin;
     margin-top: 2em;

@@ -20,6 +20,7 @@ $mediaTextMargin: 34px;
 	height: auto;
 	&__image { //to change size of image, we must change wrapper
 		width: 100%;
+		border-radius: 4px;
 	}
 	&__number {
 		color: whitesmoke;

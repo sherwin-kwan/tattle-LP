@@ -1,0 +1,12 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: whitesmoke;
+	background-image: linear-gradient(to left, $primary-color, #1b67da);
+	height: 60px;
+	width: 100%;
+}
