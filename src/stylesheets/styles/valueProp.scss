@@ -40,6 +40,15 @@ $mediaTextMargin: 34px;
 		line-height: 1.4;
 		font-size: calc(0.8em + .5vw)
 	}
+	@media screen and (min-width: $break-lg) {
+		@include marginHorizontal(3em)
+	}
+	@media screen and (min-width: $break-xlg) {
+		@include marginHorizontal(5em)
+	}
+	@media screen and (min-width: $break-xxlg) {
+		@include marginHorizontal(7em)
+	}
 }
 .middleMediaCard {
 	flex-direction: row-reverse;
