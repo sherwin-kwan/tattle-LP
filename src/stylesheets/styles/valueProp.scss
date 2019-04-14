@@ -84,8 +84,8 @@ $mediaTextMargin: 34px;
 .imageWrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-self: flex-start;
+	justify-content: center;
+	align-self: center;
 	@include marginVertical(2em);
 	max-width: 320px;
 	width: calc(4em + 40vw);
