@@ -123,7 +123,7 @@
   top: 5px;
   left: 7px;
   margin-left: 0;
-  animation: flicker 2s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+  animation: flicker 1.2s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
 }
 
 @keyframes flicker {
