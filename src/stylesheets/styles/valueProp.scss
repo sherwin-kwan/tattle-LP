@@ -60,6 +60,14 @@ $mediaTextMargin: 34px;
 
 .edgeMediaArea {
 	background-color: whitesmoke;
+	.l-media__text {
+		background-image: linear-gradient(to bottom left, #4870C6, #3FB3D6);
+		box-shadow: -3px 2px 9px 0px #8c8c8c;
+		border-radius: 2em;
+		@include paddingVertical(2em);
+		@include paddingHorizontal(5em);
+		color: whitesmoke;
+	}
 }
 
 .middleMediaArea {
@@ -73,7 +81,6 @@ $mediaTextMargin: 34px;
 	flex-wrap: wrap;
 	max-width: calc(19em + 12vw + 1em);
 	margin: 2em auto;
-
 
 	&__numberAndHeader {
 		display: flex;
