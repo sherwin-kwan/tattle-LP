@@ -25,11 +25,14 @@
 .signUpButton {
   position: sticky;
   top: 0;
+  margin: 0 auto;
+  width: fit-content;
   a {
     text-transform: uppercase;
   }
 }
 
+//TODO: make the 'why host with tattle' text have granim on it too
 #granim-canvas {
   position: absolute;
   z-index: -1;
