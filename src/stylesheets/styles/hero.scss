@@ -22,7 +22,6 @@
     transition-duration: 0.3s;
     text-transform: uppercase;
     background-color: #db8324;
-    display:inline-block;
     text-decoration:none;
     cursor: pointer;
     font-size:20px;
@@ -61,6 +60,7 @@
     &:focus,
     &:active {
       color: whitesmoke;
+      outline: none;
     }
     &:hover:before,
     &:focus:before,
@@ -120,15 +120,23 @@
       margin-top: 2em;
     }
   }
-  //TODO: Adjust size of learn more button
   //TODO: pressing button should not scroll down user so abruptly
   &__learnMore {
     @include buttonMixin;
+    transform: perspective(1px) translateZ(0);
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 22em;
     margin-top: 2em;
     max-width: 47%;
-    height: 40px;
+    line-height: 30px;
+    height: 30px;
     text-decoration: none;
     justify-self: flex-end;
+    transform: perspective(1px) translateZ(0);
+    font-size: 17px;
+    text-shadow: black 1px 0 10px;
 
     &Container {
       width: fit-content;
