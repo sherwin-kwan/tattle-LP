@@ -8,7 +8,7 @@
   //! SIGN UP BUTTON
 .signUpButton {
   position: sticky;
-  top: 10px;
+  top: 15px;
   margin: 0 auto;
   width: fit-content;
   z-index: 1;
@@ -34,7 +34,6 @@
     border-radius:25px;
     max-width:100%;white-space:nowrap;
     overflow:hidden;
-    // text-overflow:ellipsis;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     transform: translatey(0px);
 	  animation: float 4s ease-in-out infinite;
