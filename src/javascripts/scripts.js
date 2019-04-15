@@ -45,6 +45,6 @@ $(document).ready(function () {
 	//* RALLAX.js
 	const heroImage = document.querySelector('.c-hero')
 	const parallax = rallax(heroImage, {
-		speed: 0.4
+		speed: 0.1
 	})
 });
