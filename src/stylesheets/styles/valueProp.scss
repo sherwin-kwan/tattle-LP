@@ -67,6 +67,7 @@ $mediaTextMargin: 34px;
 		@include paddingVertical(2em);
 		@include paddingHorizontal(5em);
 		color: whitesmoke;
+		@include marginVertical(2em);
 	}
 }
 
