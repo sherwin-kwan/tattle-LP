@@ -3,25 +3,9 @@
 
 .heroBackground {
   position: relative;
-  // height: 556px;
-  // background-image: linear-gradient(to right, #00ffc6, #1b67da);
-  // @media screen and (min-width: $break-md) {
-    //   height: 660px;
-    // }
-  // @media screen and (min-width: $break-lg) {
-    //   height: 757px;
-    // }
-    // @media screen and (min-width: $break-xlg) {
-      //   height: 854px;
-      // }
-      // @media screen and (min-width: $break-xxlg) {
-        //   height: 931px;
-        // }
-        // @media screen and (min-width: $break-xxxlg) {
-          //   height: 1020px;
-          // }
   }
 
+  //! SIGN UP BUTTON
 .signUpButton {
   position: sticky;
   top: 10px;
@@ -53,6 +37,8 @@
     overflow:hidden;
     // text-overflow:ellipsis;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transform: translatey(0px);
+	  animation: float 4s ease-in-out infinite;
 
     &:before {
       text-shadow: black 1px 0 10px;
@@ -82,11 +68,11 @@
       border-radius: 25px;
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
-}
-
+    }
   }
 }
 
+//! GRADIENT GRANIM CANVAS
 //TODO: make the 'why host with tattle' text have granim on it too
 #granim-canvas {
   position: absolute;
@@ -189,15 +175,24 @@
     visibility: hidden;
   }
 }
+$offset: 20px;
+$negativeOffset: 20px;
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey($negativeOffset);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
 
 .typed-cursor {
   visibility: hidden;
-}
-
-//! hover.js button animation
-.hvr-sweep-to-right {
-
-}
-.hvr-sweep-to-right:before {
-
 }
