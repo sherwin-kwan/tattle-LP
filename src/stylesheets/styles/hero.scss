@@ -24,11 +24,66 @@
 
 .signUpButton {
   position: sticky;
-  top: 0;
+  top: 10px;
   margin: 0 auto;
   width: fit-content;
-  a {
+  z-index: 1;
+  .button {
+    display: inline-block;
+    vertical-align: middle;
+    color: $charcoal;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
     text-transform: uppercase;
+    background-color: #db8324;
+    display:inline-block;
+    text-decoration:none;
+    cursor: pointer;
+    font-size:20px;
+    line-height:50px;
+    height:50px;
+    font-weight:700;
+    text-align:center;
+    margin:0;
+    padding:0px 33px;
+    border-radius:25px;
+    max-width:100%;white-space:nowrap;
+    overflow:hidden;
+    // text-overflow:ellipsis;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    &:before {
+      text-shadow: black 1px 0 10px;
+      content: "";
+      border-radius: 25px;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: darkblue; //target color of transformation
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: whitesmoke;
+    }
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+      border-radius: 25px;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+}
+
   }
 }
 
@@ -137,4 +192,12 @@
 
 .typed-cursor {
   visibility: hidden;
+}
+
+//! hover.js button animation
+.hvr-sweep-to-right {
+
+}
+.hvr-sweep-to-right:before {
+
 }
