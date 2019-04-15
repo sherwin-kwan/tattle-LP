@@ -2,6 +2,7 @@ import Typed from 'typed.js';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Granim from 'granim'
+import rallax from 'rallax.js'
 AOS.init();
 
 $(document).ready(function () {
@@ -19,14 +20,14 @@ $(document).ready(function () {
 			'slow');
 	});
 
-	//TYPED.js
+	//* TYPED.js
 	var typed = new Typed('#js-typed', {
 		strings: ["you've got your passion.^1000\n you've got your city.^300\n^300\n^300\n now, ^500 let's share it\n with the world^500."],
 		typeSpeed: 30,
 		backSpeed: 40,
 	});
 
-	//GRANIM.js
+	//* GRANIM.js
 	var granimInstance = new Granim({
 		element: '#granim-canvas',
 		name: 'granim',
@@ -41,5 +42,9 @@ $(document).ready(function () {
 		}
 	});
 
-
+	//* RALLAX.js
+	const heroImage = document.querySelector('.c-hero')
+	const parallax = rallax(heroImage, {
+		speed: 0.4
+	})
 });
