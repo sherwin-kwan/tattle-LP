@@ -55,8 +55,6 @@ $mediaTextMargin: 34px;
 .middleMediaCard {
 	flex-direction: row-reverse;
 }
-.mediaArea {
-}
 
 .edgeMediaArea {
 	background-color: whitesmoke;
@@ -108,4 +106,20 @@ $mediaTextMargin: 34px;
 	@include marginVertical(2em);
 	max-width: 320px;
 	width: calc(4em + 40vw);
+}
+
+.propImage1 {
+	background-image: url(/src/images/image1.svg);
+	height: 300px;
+	width: 300px;
+	background-size: 100% 100%;
+	background-size: cover;
+}
+
+.propImage2 {
+
+}
+
+.propImage3 {
+
 }
