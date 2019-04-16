@@ -10,8 +10,6 @@ AOS.init();
 
 $(document).ready(function () {
 
-	console.log('myHeroImage', HeroImage)
-
 	//* TYPED.js
 	var typed = new Typed('#js-typed', {
 		strings: ["you've got your passion.^1000\n you've got your city.^300\n^300\n^300\n now, ^500 let's share it\n with the world^500."],
