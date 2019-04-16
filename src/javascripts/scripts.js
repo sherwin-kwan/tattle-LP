@@ -3,22 +3,14 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Granim from 'granim'
 import rallax from 'rallax.js'
+
+import HeroImage from '../images/hero.png'
+
 AOS.init();
 
 $(document).ready(function () {
-	console.log("jquery loaded!!!");
 
-  $("#js-signUpForm").click(() => {
-    console.log('clicked!')
-    $("#js-formContent").slideToggle();
-	})
-
-	$("#c-hero__learnMore").click(function () {
-		$('html,body').animate({
-			scrollTop: $(".valuePropSection__header").offset().top
-		},
-			'slow');
-	});
+	console.log('myHeroImage', HeroImage)
 
 	//* TYPED.js
 	var typed = new Typed('#js-typed', {
