@@ -37,7 +37,7 @@ const styleLoader = {
 };
 
 const cssLoader = {
-  loader: 'css-loader',
+  loader: 'css-loader?url=false',
   options: {
     sourceMap,
   },
