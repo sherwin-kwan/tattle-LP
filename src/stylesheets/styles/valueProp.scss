@@ -14,34 +14,6 @@ $mediaTextMargin: 34px;
 }
 
 .c-mediaCard {
-	@include marginHorizontal(1em);
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	height: auto;
-	&__image { //to change size of image, we must change wrapper
-		width: 100%;
-		border-radius: 4px;
-	}
-	&__number {
-		color: whitesmoke;
-		text-shadow: -1px 0 $charcoal, 0 1px $charcoal, 1px 0 $charcoal, 0 -1px $charcoal;
-		width: max-content;
-		font-size: calc(2.1em + 1.8vw);
-		margin: 0 0 15px $mediaTextMargin;
-	}
-	&__header {
-		align-self: center;
-		font-size: calc(1em + 1.1vw);
-		margin-top: 0;
-		margin-left: $mediaTextMargin;
-	}
-	&__explanation {
-		flex: 1;
-		margin-left: $mediaTextMargin;
-		line-height: 1.4;
-		font-size: calc(0.8em + .5vw)
-	}
 	@media screen and (min-width: $break-lg) {
 		@include marginHorizontal(3em)
 	}
@@ -51,23 +23,60 @@ $mediaTextMargin: 34px;
 	@media screen and (min-width: $break-xxlg) {
 		@include marginHorizontal(7em)
 	}
+	@include marginHorizontal(1em);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: auto;
+	&__image { //to change size of image, we must change wrapper
+		width: 100%;
+		border-radius: 4px;
+	}
+	//! number
+	&__number {
+		color: whitesmoke;
+		text-shadow: -1px 0 $charcoal, 0 1px $charcoal, 1px 0 $charcoal, 0 -1px $charcoal;
+		width: max-content;
+		font-size: calc(2.1em + 1.8vw);
+		margin: 0 0 15px 0;
+		// margin: 0 0 15px $mediaTextMargin;
+	}
+
+	//! header
+	&__header {
+		align-self: center;
+		font-size: calc(1em + 1.1vw);
+		margin-top: 0;
+		margin-left: 0;
+		// margin-left: $mediaTextMargin;
+	}
+
+
+	//! explanation
+	&__explanation {
+		flex: 1;
+		margin-left: 0;
+		line-height: 1.4;
+		font-size: calc(0.8em + .5vw)
+		// margin-left: $mediaTextMargin;
+	}
 }
 .middleMediaCard {
 	flex-direction: row-reverse;
 }
-.mediaArea {
-}
 
+//! whole area
 .edgeMediaArea {
 	background-color: whitesmoke;
 	.l-media__text {
 		background-image: linear-gradient(to bottom left, #4870C6, #3FB3D6);
 		box-shadow: -3px 2px 9px 0px #8c8c8c;
 		border-radius: 2em;
-		@include paddingVertical(2em);
-		@include paddingHorizontal(5em);
+		// @include paddingVertical(2em);
+		// @include paddingHorizontal(5em);
 		color: whitesmoke;
-		@include marginVertical(2em);
+		// @include marginVertical(2em);
+		padding: 1.2em;
 	}
 }
 
