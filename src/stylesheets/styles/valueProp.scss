@@ -23,6 +23,7 @@ $mediaTextMargin: 34px;
 	@media screen and (min-width: $break-xxlg) {
 		@include marginHorizontal(7em)
 	}
+
 	@include marginHorizontal(1em);
 	display: flex;
 	flex-direction: row;
@@ -32,16 +33,16 @@ $mediaTextMargin: 34px;
 		width: 100%;
 		border-radius: 4px;
 	}
-	//! number
+
 	&__number {
 		color: whitesmoke;
 		text-shadow: -1px 0 $charcoal, 0 1px $charcoal, 1px 0 $charcoal, 0 -1px $charcoal;
 		width: max-content;
 		font-size: calc(2.1em + 1.8vw);
 		margin: 0 0 15px 0;
+		// margin: 0 0 15px $mediaTextMargin;
 	}
 
-	//! header
 	&__header {
 		align-self: center;
 		font-size: calc(1em + 1.1vw);
@@ -50,7 +51,6 @@ $mediaTextMargin: 34px;
 	}
 
 
-	//! explanation
 	&__explanation {
 		flex: 1;
 		margin-left: 0;
@@ -60,20 +60,15 @@ $mediaTextMargin: 34px;
 }
 .middleMediaCard {
 	flex-direction: row-reverse;
+	.l-media__text {
+		@include propTextArea(bottom right, #2371a2, #3CABCC);
+	}
 }
 
-//! whole area
 .edgeMediaArea {
 	background-color: whitesmoke;
 	.l-media__text {
-		background-image: linear-gradient(to bottom left, #4870C6, #3FB3D6);
-		box-shadow: -3px 2px 9px 0px #8c8c8c;
-		border-radius: 2em;
-		color: whitesmoke;
-		padding: 1.2em;
-		@media screen and (min-width: $break-sm) {
-			padding: 2.4em;
-		}
+		@include propTextArea(bottom left, #4870C6, #3FB3D6);
 	}
 }
 
