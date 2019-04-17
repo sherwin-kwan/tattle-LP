@@ -45,7 +45,7 @@ $mediaTextMargin: 34px;
 
 	&__header {
 		align-self: center;
-		font-size: calc(1em + 1.1vw);
+		font-size: calc(1em + 1vw);
 		margin-top: 0;
 		margin-left: 0;
 	}
@@ -54,8 +54,8 @@ $mediaTextMargin: 34px;
 	&__explanation {
 		flex: 1;
 		margin-left: 0;
-		line-height: 1.4;
-		font-size: calc(0.8em + .5vw)
+		line-height: 1.5;
+		font-size: calc(.8em + .2vw);
 	}
 }
 .middleMediaCard {
