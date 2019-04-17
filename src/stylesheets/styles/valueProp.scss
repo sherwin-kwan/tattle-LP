@@ -31,7 +31,7 @@ $mediaTextMargin: 34px;
 	height: auto;
 	&__image { //to change size of image, we must change wrapper
 		width: 100%;
-		border-radius: 4px;
+
 	}
 
 	&__number {
@@ -62,6 +62,10 @@ $mediaTextMargin: 34px;
 	flex-direction: row-reverse;
 	.l-media__text {
 		@include propTextArea(bottom right, #2371a2, #3CABCC);
+	}
+	.imageWrapper {
+		margin-right: 0;
+		margin-left: auto;
 	}
 }
 
@@ -107,6 +111,7 @@ $mediaTextMargin: 34px;
 	justify-content: center;
 	align-self: center;
 	@include marginVertical(2em);
-	max-width: 320px;
-	width: calc(4em + 40vw);
+	max-width: 607px;
+	width: calc(8em + 40vw);
+	margin-right: auto;
 }
