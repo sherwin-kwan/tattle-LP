@@ -3,12 +3,14 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Granim from 'granim'
 import rallax from 'rallax.js'
-
 import HeroImage from '../images/hero.png'
-
 AOS.init();
 
 $(document).ready(function () {
+
+	//Create hero image with javascript
+	var HeroImageNode = document.getElementById('heroImage')
+	HeroImageNode.style.backgroundImage = `url(${HeroImage})`
 
 	//* TYPED.js
 	var typed = new Typed('#js-typed', {
