@@ -21,7 +21,7 @@
     transition-property: color;
     transition-duration: 0.3s;
     text-transform: uppercase;
-    background-color: #db8324;
+    background-image: linear-gradient(to right, #ffb100, #ff8800);
     text-decoration:none;
     cursor: pointer;
     font-size:20px;
@@ -48,7 +48,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: darkblue; //target color of transformation
+      background-image: radial-gradient(#3a3aff, #111111); //target color of transformation
       transform: scaleX(0);
       transform-origin: 0 50%;
       transition-property: transform;
