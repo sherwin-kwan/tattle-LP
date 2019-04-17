@@ -64,7 +64,6 @@ $mediaTextMargin: 34px;
 		@include propTextArea(bottom right, #2371a2, #3CABCC);
 	}
 	.imageWrapper {
-		// margin-right: 0;
 		margin-left: auto;
 	}
 }
@@ -88,6 +87,7 @@ $mediaTextMargin: 34px;
 	max-width: calc(19em + 12vw + 1em);
 	margin: 2em auto;
 	font-size: calc(0.8em + 0.1vw);
+	transition-delay: .2s;
 
 	&__numberAndHeader {
 		display: flex;
@@ -105,5 +105,5 @@ $mediaTextMargin: 34px;
 	@include marginVertical(2em);
 	max-width: 607px;
 	width: calc(16em + 20vw);
-	@include marginHorizontal(auto)
+	@include marginHorizontal(auto);
 }
