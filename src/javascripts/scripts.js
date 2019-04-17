@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 	//* TYPED.js
 	var typed = new Typed('#js-typed', {
-		strings: ["you've got your passion.^1000\n you've got your city.^300\n^300\n^300\n now, ^500 let's share it\n with the world^500."],
+		strings: ["you've got your passion.^1000\n you've got your city.^300\n^300\n^300\n now, ^500 let's share it with the world^500."],
 		typeSpeed: 30,
 		backSpeed: 40,
 	});
