@@ -39,7 +39,6 @@ $mediaTextMargin: 34px;
 		width: max-content;
 		font-size: calc(2.1em + 1.8vw);
 		margin: 0 0 15px 0;
-		// margin: 0 0 15px $mediaTextMargin;
 	}
 
 	//! header
@@ -48,7 +47,6 @@ $mediaTextMargin: 34px;
 		font-size: calc(1em + 1.1vw);
 		margin-top: 0;
 		margin-left: 0;
-		// margin-left: $mediaTextMargin;
 	}
 
 
@@ -58,7 +56,6 @@ $mediaTextMargin: 34px;
 		margin-left: 0;
 		line-height: 1.4;
 		font-size: calc(0.8em + .5vw)
-		// margin-left: $mediaTextMargin;
 	}
 }
 .middleMediaCard {
@@ -72,11 +69,11 @@ $mediaTextMargin: 34px;
 		background-image: linear-gradient(to bottom left, #4870C6, #3FB3D6);
 		box-shadow: -3px 2px 9px 0px #8c8c8c;
 		border-radius: 2em;
-		// @include paddingVertical(2em);
-		// @include paddingHorizontal(5em);
 		color: whitesmoke;
-		// @include marginVertical(2em);
 		padding: 1.2em;
+		@media screen and (min-width: $break-sm) {
+			padding: 2.4em;
+		}
 	}
 }
 
