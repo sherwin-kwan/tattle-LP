@@ -64,7 +64,7 @@ $mediaTextMargin: 34px;
 		@include propTextArea(bottom right, #2371a2, #3CABCC);
 	}
 	.imageWrapper {
-		margin-right: 0;
+		// margin-right: 0;
 		margin-left: auto;
 	}
 }
@@ -87,21 +87,13 @@ $mediaTextMargin: 34px;
 	flex-wrap: wrap;
 	max-width: calc(19em + 12vw + 1em);
 	margin: 2em auto;
+	font-size: calc(0.8em + 0.1vw);
 
 	&__numberAndHeader {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: fit-content;
-	}
-
-	@media screen and (min-width: 764px) {
-		margin: initial;
-		margin-left: auto;
-		&-middle {
-			margin-right: auto;
-			margin-left: initial;
-		}
 	}
 }
 
@@ -112,6 +104,6 @@ $mediaTextMargin: 34px;
 	align-self: center;
 	@include marginVertical(2em);
 	max-width: 607px;
-	width: calc(8em + 40vw);
-	margin-right: auto;
+	width: calc(16em + 20vw);
+	@include marginHorizontal(auto)
 }
