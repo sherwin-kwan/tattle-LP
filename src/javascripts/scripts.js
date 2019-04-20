@@ -3,7 +3,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Granim from 'granim'
 import rallax from 'rallax.js'
-import HeroImage from '../images/hero.png'
+import HeroImage from '../images/hero2.jpg'
 AOS.init();
 
 $(document).ready(function () {
