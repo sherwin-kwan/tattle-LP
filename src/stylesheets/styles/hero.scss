@@ -5,12 +5,12 @@
   position: relative;
 }
 
-  //! SIGN UP BUTTON
+  //* SIGN UP BUTTON
 .signUpButton {
   position: sticky;
   top: 15px;
   margin: 0 auto;
-  width: fit-content;
+  width: 70vw;
   z-index: 1;
   .button {
     display: inline-block;
@@ -146,6 +146,7 @@
     &:hover,
     &:focus,
     &:active {
+      background-image: linear-gradient(#4fffd9, #00bbb2);
       box-shadow: 10px 15px 10px -10px rgba(0, 0, 0, 0.5);
       transform: scale(1.1);
     }
