@@ -124,7 +124,7 @@
       margin-top: 2em;
     }
   }
-  //TODO: pressing button should not scroll down user so abruptly
+
   &__learnMore {
     @include buttonMixin;
     display: inline-block;
@@ -159,6 +159,11 @@
       margin-left: calc(0.3em + 13vw);
       margin-top: auto;
     }
+  }
+  img {
+    float: right;
+    margin: 20px;
+    width: calc(2.5em + 2vw);
   }
 }
 
