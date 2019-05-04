@@ -17,7 +17,8 @@
     "setup": "node ./config/site.setup.js",
     "postinstall": "node ./config/site.setup.js",
     "build:dist": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
-    "deploy": "./deploy"
+    "add-domain": "echo \"modal-interchange-chart.com\" > build/CNAME",
+    "deploy": "yarn add-domain && ./deploy"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
